@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/image_view_person_logo"
+            android:src="@drawable/elon"
+            android:layout_margin="12dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample Text"
+            android:layout_alignTop="@id/image_view_person_logo"
+            android:layout_toEndOf="@+id/image_view_person_logo"
+            android:id="@+id/text_view_person_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample Description"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/image_view_person_logo"
+            android:layout_below="@id/text_view_person_name"
+            android:id="@+id/text_view_person_said"
+
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
