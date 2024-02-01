@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
         };
 
+        QuoteAdapter adapter = new QuoteAdapter(quoteof);
+        thelist.setAdapter(adapter);
+
 
     }
 }
